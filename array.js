@@ -11,3 +11,11 @@ console.log(result)
 // concat() --> join array
 const alldata = data1.concat(data2)
 console.log(alldata);
+
+//push
+
+//pop
+
+//shift
+
+//unshift
