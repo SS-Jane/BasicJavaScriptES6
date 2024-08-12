@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Report</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <h2>Money report</h2>
@@ -24,7 +23,7 @@
         </div>
         <h3>History transaction</h3>
         <ul id="list" class="list">
-            <li class="minus">
+            <!-- <li class="minus">
                 Car maintenance <span>฿-400</span>
                 <button class="delete-btn">x</button>
             </li>
@@ -32,7 +31,7 @@
             <li class="plus">
                 Salary <span>฿+15000</span>
                 <button class="delete-btn">x</button>
-            </li>
+            </li> -->
         </ul>
         <h3>Add transaction</h3>
         <form id="form">
@@ -41,13 +40,15 @@
                 <input type="text" name="" id="text" placeholder="Transaction name">
             </div>
             <div class="form-control">
-                <label for="Amount">Amount <br>
+                <label for="amount">Amount <br>
                     (+ Income, - Expense) 
                 </label> 
-                <input type="number" name="" id="Amount" placeholder="Amount">
+                <input type="number" name="" id="amount" placeholder="Amount">
             </div>
             <button class="btn">Add transaction</button>
         </form>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
