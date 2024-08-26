@@ -8,7 +8,7 @@
     --box-shadow : 0 5px 20px 1px rgba(0,0,0,0.5); 
 }
 [data-theme='dark']{
-    --primary-color : orange;
+    --primary-color : #ffa500;
     --text-color : white;
     --text-color-second : rgb(255,255,255,0.8);
     --bg-color : #121213;
@@ -17,6 +17,7 @@
 *{
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--bg-color);
@@ -52,8 +53,8 @@ nav{
     width: 100vw;
     background: rgb(255 255 255 / 50%);
 }
-a{
-    margin-right: 25px;
+nav>a{
+    margin-right: 15px;
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 3px solid transparent;
@@ -123,4 +124,29 @@ input:checked +.slider::before{
 }
 span.toggle-text{
     font-size: 25px;
+}
+.fab{
+    font-size: 100px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.fab:hover{
+    color: var(--text-color);
+}
+.project-container{
+    display: flex;
+}
+.img-container{
+    border: 1px solid var(--text-color-second);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 10px 20px;
+    background: var(--bg-color);
+    margin: 25px;
+    width: auto;
+}
+img{
+    width: 300px;
+    height: 300px;
 }
